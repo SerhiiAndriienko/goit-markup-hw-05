@@ -23,7 +23,7 @@
                 <!-- logo -->
                 <a class="logo" href="./index.html"><span class="web">Web</span><span class="studio">studio</span></a>
                 <ul class="nav-list">
-                    <li><a class="navigation-item" href="./index.html">Studio</a></li>
+                    <li><a class="navigation-item current-list" href="./index.html">Studio</a></li>
                     <li><a class="navigation-item" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="navigation-item" href="#">Contacts</a></li>
                 </ul>
@@ -43,7 +43,7 @@
             <div class="container">
                 <h1 class="main-text"> Effective Solutions </h1>
                 <p class="main-text">for Your Business</p>
-                <button class="order-button" type="button">Order Service</button>
+                <button class="order-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!-- Feature -->
@@ -289,32 +289,32 @@
                     Customers
                 </h2>
                 <ul class="list-customers">
-                    <li  class="customer-items"> <a  href="#" >
-                            <svg  class="icon-customers" >
-                                <use  href="./images/svg/icons.svg#icon-client-1"></use>
-                            </svg>
-                        </a></li>
-                    <li class="customer-items"> <a href="#" >
+                    <li class="customer-items"> <a href="#">
                             <svg class="icon-customers">
-                                <use  href="./images/svg/icons.svg#icon-client-2"></use>
+                                <use href="./images/svg/icons.svg#icon-client-1"></use>
                             </svg>
                         </a></li>
-                    <li class="customer-items"> <a href="#" >
+                    <li class="customer-items"> <a href="#">
+                            <svg class="icon-customers">
+                                <use href="./images/svg/icons.svg#icon-client-2"></use>
+                            </svg>
+                        </a></li>
+                    <li class="customer-items"> <a href="#">
                             <svg class="icon-customers">
                                 <use href="./images/svg/icons.svg#icon-client-3"></use>
                             </svg>
                         </a></li>
-                    <li class="customer-items"> <a href="#" >
+                    <li class="customer-items"> <a href="#">
                             <svg class="icon-customers">
-                                <use href="./images/svg/icons.svg#icon-client-4" ></use>
+                                <use href="./images/svg/icons.svg#icon-client-4"></use>
                             </svg>
                         </a></li>
-                    <li class="customer-items"> <a href="#" >
+                    <li class="customer-items"> <a href="#">
                             <svg class="icon-customers">
                                 <use href="./images/svg/icons.svg#icon-client-5"></use>
                             </svg>
                         </a></li>
-                    <li class="customer-items"> <a href="#" >
+                    <li class="customer-items"> <a href="#">
                             <svg class="icon-customers">
                                 <use href="./images/svg/icons.svg#icon-client-6"></use>
                             </svg>
@@ -371,6 +371,19 @@
 
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-btn" type="button" data-modal-close>
+                <svg class="close-icon">
+                    <use href="./images/svg/icons.svg#icon-close">   
+                        
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

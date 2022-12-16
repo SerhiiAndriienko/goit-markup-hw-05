@@ -46,6 +46,43 @@
                 <button class="order-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close-btn" type="button" data-modal-close>
+                    <svg class="close-icon">
+                        <use href="./images/svg/icons.svg#icon-close">
+
+                        </use>
+                    </svg>
+                </button>
+                <h3>Leave your contacts and we will call you back</h3>
+                <form class="contact-form" name="contact-info" autocomplete="on" novalidate>
+                    <label for="user_name">Name</label>
+                    <input class="contact-input" type="name" name="user_name" id="user_name" autofocus>
+
+                    <label for="user_tel">Phone</label>
+                    <input class="contact-input" type="tel" name="uzen-tel" id="user_tel">
+
+                    <label for="user_email">Email</label>
+                    <input class="contact-input" type="email" name="email" id="user_email">
+
+                    <label name="comment" id="user_comment">
+                        Comment
+                    </label>
+                    <textarea name="comment" rows="8" placeholder="Text input" id="user_comment"></textarea>
+
+<div class="checkbox-flex" >
+                        <input class="checkbox-input" type="checkbox" name="policy" value="confirm" id="user_confirm" />
+                        <label  name="policy" id="user_confirm">
+                            I accept the terms and conditions of the <a href="#" class="privacy-policy">Privacy Policy</a>
+                        </label>
+</div>
+
+                <button class="submit-btn" type="submit"><span class="btn-text">Send</span></button>
+
+                </form>
+            </div>
+        </div>
         <!-- Feature -->
 
         <section class="features section">
@@ -371,17 +408,7 @@
 
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="close-btn" type="button" data-modal-close>
-                <svg class="close-icon">
-                    <use href="./images/svg/icons.svg#icon-close">   
-                        
-                    </use>
-                </svg>
-            </button>
-        </div>
-    </div>
+
 
     <script src="./js/modal.js"></script>
 </body>
